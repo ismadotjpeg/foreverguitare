@@ -1,0 +1,43 @@
+body {
+background-color: grey;
+overflow-x: hidden;
+justify-content: center;
+justify-items: center;
+}
+header{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+h1, h2, h3, h4, h5 {
+font-family:Arial, Helvetica, sans-serif;
+color: white;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    max-width: 800px;
+}
+.navbar{
+display: flex; justify-items: center; align-content: center; justify-content: space-evenly; margin: 7px; align-items: center;
+height: 40px;
+color: white;
+border-color: white;
+border-width: 3px;
+border-style: solid;
+width: 800px;
+max-width: 90%;
+}
+.presentations{
+    background-color: rgba(8, 8, 8, 0.411);
+    padding: 20px;
+    border: solid;
+    margin: 2px;
+}
+form{
+    display: inline-block;
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
