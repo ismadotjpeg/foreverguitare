@@ -8,15 +8,37 @@
     <link rel="icon" href="./vecteezy_classical-guitar-on-transparent-background_53581158.png">
 </head>
 <body>
-    <form action="./demande_cours.html" method="GET">
-        <label for="message" ><p>Envoyez-nous vos coordonnées (bancaires), votre niveau et le style de guitare (folk, blues, pop, metal, jazz...) dans lequel vous aimeriez progresser, nous reviendrons vers vous avec une proposition adaptée à vos besoins !</p></label>
-        <div>
-        <input name="message" id="message" style="min-height: 200px; width: 500px; text-align: start;">
-        </div>
-        <button type="submit">Envoyer</button>
+    <p style="max-width: 40%;">Envoyez-nous vos coordonnées (bancaires), votre niveau et le style de guitare (folk, blues, pop, metal, jazz...) dans lequel vous aimeriez progresser, nous reviendrons vers vous avec une proposition adaptée à vos besoins !</p>
+        <form action="./demande_cours.html" method="post">
+        <div id="formulaire_cours_p">
+        <label>email:
+            <input size="23" type="email" name="email" id="email" placeholder="jimmyhendrix@guitaremail.com">
+        </label>
+        <br>
+        <fieldset style="margin-top: 4%;">
+            <label>
+            <input type="radio" name="drone" id="débutant" value="débutant">débutant
+            </label>
+            <label>
+            <input type="radio" name="drone" id="intermédiaire" value="intermédiaire">intermédiaire
+            </label>
+            <label>
+            <input type="radio" name="drone" id="avancé" value="avancé">avancé
+            </label>
+        </fieldset>
+        <label >
+            Dites-en plus!
+        </label>
+            <br>
+             <textarea placeholder="Quel style souhaitez-vous apprendre? Guitare électrique ou acoustique?" style="width: 100% ;height: 90px;">
+             </textarea>
+        
+        <br>
+        <button type="submit" style="margin: 5px;">Envoyer</button>
+    </div>
     </form>
     <footer>
-        <a href="./" style="font-size: 40px;"> retour </a>
+        <a id="retourftr" href="./" style="font-size: 40px;"> retour </a>
     </footer>
 </body>
 </html>

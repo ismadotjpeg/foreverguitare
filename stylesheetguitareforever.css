@@ -23,6 +23,11 @@ p{
     color: white;
     max-width: 800px;
 }
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1.5px rgb(120, 38, 214); */
+}
 .navbar{
 display: flex; justify-items: center; align-content: center; justify-content: space-evenly; margin: 7px; align-items: center;
 height: 40px;
@@ -40,7 +45,30 @@ max-width: 90%;
     margin: 2px;
 }
 form{
-    display: inline-block;
     position: absolute;
     top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    transform: scale(1.2);
+}
+footer{
+    position: fixed;
+    right: 2%;
+    top: 2%;
+}
+#formulaire_cours_p{
+    padding: 15px;
+    background-color: rgb(212, 212, 212);
+    /* background-image: url(./azhar_aura_farm_avec_shaki_a_cote.jpeg); */
+    background-size: 100%;
+    border-radius: 10px;
+    border-style: solid;
+}
+#clickable:hover{
+    transform: scale(1.1);
 }

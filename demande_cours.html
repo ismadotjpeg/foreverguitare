@@ -8,8 +8,16 @@
     <link rel="icon" href="./vecteezy_classical-guitar-on-transparent-background_53581158.png">
 </head>
 <body>
+    <script>
+        const resultsList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value,
+        name) => {
+            resultsList.append(`${morceau}: ${value}`)
+            resultsList.append(document.createElement('br'))
+        })
+    </script>
     <footer>
-        <a href="./index.html" style="font-size: 40px;"> retour </a>
+        <a id="retourftr" href="./index.html" style="font-size: 40px;"> retour </a>
     </footer>
 </body>
 </html>
